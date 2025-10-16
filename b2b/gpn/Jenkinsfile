@@ -1,0 +1,4 @@
+pipeline {
+    agent { node { label 'RMG' } }
+    parameters {
+      choice(choices: ['','stage','prod'], description: 'DB master', name: 'env')
