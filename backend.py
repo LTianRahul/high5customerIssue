@@ -127,13 +127,13 @@ def risky_operation():
     except:
         pass  # Silently catching all exceptions
 
-# VULNERABILITY 15: Insecure random number generation
+
 def generate_token():
     import random
     # Using weak random for security-sensitive operation
     return random.randint(1000, 9999)
 
-# ERROR 16: Memory leak potential
+
 global_list = []
 def memory_leak():
     global global_list
