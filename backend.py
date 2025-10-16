@@ -127,18 +127,6 @@ def risky_operation():
     except:
         pass  # Silently catching all exceptions
 
-
-def generate_token():
-    import random
-    # Using weak random for security-sensitive operation
-    return random.randint(1000, 9999)
-
-
-global_list = []
-def memory_leak():
-    global global_list
-    global_list.append([0] * 10000000)
-
 # VULNERABILITY 17: Debug mode enabled
 if __name__ == '__main__':
     # Running Flask in debug mode in production
