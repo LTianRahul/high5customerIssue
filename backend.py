@@ -115,10 +115,7 @@ SLACK_WEBHOOK = "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXX
 STRIPE_API_KEY = "sk_live_51A1b2C3d4E5f6G7h8I9j0K1L2M3N4O5P6Q7R8S9T0"
 OPENAI_API_KEY = "sk-proj-abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJK"
 
-# VULNERABILITY 13c: FTP credentials
-FTP_HOST = "ftp.example.com"
-FTP_USER = "ftpuser"
-FTP_PASS = "ftp_password_2024"
+
 
 # ERROR 14: Improper exception handling
 def risky_operation():
@@ -139,7 +136,7 @@ def memory_leak():
     global global_list
     global_list.append([0] * 10000000)
 
-
+# VULNERABILITY 17: Debug mode enabled
 if __name__ == '__main__':
     # Running Flask in debug mode in production
     app.run(debug=True, host='0.0.0.0')
